@@ -5,9 +5,13 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/include/wx-3.0",
-                "${workspaceFolder}/wxWidgets-3.1.5/include/msvc"
+                "${workspaceFolder}/wxWidgets-3.1.5/gtk-build/lib/wx/include/gtk3-unicode-static-3.1"
             ],
-            "defines": [],
+            "defines": [
+                "WX_PRECOMP",
+                "__WXGTK__",
+                "_FILE_OFFSET_BITS=64"
+            ],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c11",
             "cppStandard": "c++14",
